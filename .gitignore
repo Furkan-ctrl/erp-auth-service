@@ -1,0 +1,17 @@
+# Maven build output — generated code, never commit
+target/
+
+# IntelliJ IDE files — each developer has their own settings
+.idea/
+*.iml
+
+# Environment/secrets file — NEVER commit passwords or JWT secrets
+.env
+
+# OS clutter
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+logs/
