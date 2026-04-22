@@ -1,0 +1,31 @@
+
+server:
+  port: ${AUTH_PORT:8081}
+
+spring:
+  application:
+    name: auth-service
+
+
+  datasource:
+    url: ${AUTH_DB_URL:jdbc:postgresql://localhost:5432/auth_db}
+    username: ${AUTH_DB_USER:auth_user}
+    password: ${AUTH_DB_PASS:auth_pass}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+jwt:
+  secret: ${JWT_SECRET}
+  expiry-ms: ${JWT_EXPIRY_MS:86400000}         # 24 hours
+  refresh-expiry-ms: ${JWT_REFRESH_EXPIRY_MS:604800000}  # 7 days
+
+logging:
+  level:
+    com.erp.auth: DEBUG

@@ -11,7 +11,6 @@
         <relativePath/>
     </parent>
 
-    <!-- This service's own identity -->
     <groupId>com.erp</groupId>
     <artifactId>auth-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -101,7 +100,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <!-- Exclude Lombok from the final jar — it was only needed at compile time -->
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>
