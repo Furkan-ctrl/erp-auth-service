@@ -3,7 +3,6 @@ package com.erp.auth.model;
 import jakarta.persistence.*;
 import lombok.*;
 
-import javax.management.relation.Role;
 import java.time.LocalDateTime;
 import java.util.Set;
 
