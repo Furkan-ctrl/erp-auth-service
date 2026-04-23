@@ -90,12 +90,6 @@
 
     <build>
         <plugins>
-            <!--
-                The Spring Boot Maven plugin lets us run the app with
-                "mvn spring-boot:run" and packages it as a fat jar
-                (a single .jar that contains all dependencies inside it)
-                using "mvn package".
-            -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
